@@ -1,6 +1,6 @@
 # svelte-marquee
 
-Marquee fully responsive and adaptative for Svelte
+Marquee fully responsive and adaptive for Svelte
 
 ```bash
 npm install svelte-marquee
