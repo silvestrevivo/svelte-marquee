@@ -20,8 +20,8 @@
     "src",
     "dist"
   ],
-  "description": "*Psst — looking for an app template? Go here --> [sveltejs/template](https://github.com/sveltejs/template)*",
-  "version": "0.0.1",
+  "description": "Marquee fully responsive and adaptive for Svelte",
+  "version": "0.0.2",
   "dependencies": {},
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 <script>
-  export let text = "";
+  export let content = "";
 
   let _marqueecontainerWidth, _textWidth;
 
@@ -48,9 +48,9 @@
 
 <div class="marquee-container" bind:offsetWidth={_marqueecontainerWidth}>
   <div class="marquee-content" style={_style} class:reverse={true}>
-    <span bind:offsetWidth={_textWidth}>{`${text} `}</span>
+    <span bind:offsetWidth={_textWidth}>{`${content} `}</span>
     {#each _arr as item}
-      <span>{`${text} `}</span>
+      <span>{`${content} `}</span>
     {/each}
   </div>
 </div>
