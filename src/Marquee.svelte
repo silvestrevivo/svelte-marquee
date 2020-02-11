@@ -27,6 +27,9 @@
 
   $: _style = `
     transform: translate(-${_contentWidth}px, 0);
+    -webkit-animation-duration: ${_time}s;
+    -moz-animation-duration: ${_time}s;
+    -o-animation-duration: ${_time}s;
     animation-duration: ${_time}s;
   `;
 </script>
@@ -43,17 +46,29 @@
   }
 
   .no-autoplay {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
     animation-play-state: paused;
   }
   .no-autoplay:hover {
+    -webkit-animation: marquee linear infinite;
+    -moz-animation: marquee linear infinite;
+    -o-animation: marquee linear infinite;
     animation: marquee linear infinite;
   }
 
   .autoplay {
+    -webkit-animation: marquee linear infinite;
+    -moz-animation: marquee linear infinite;
+    -o-animation: marquee linear infinite;
     animation: marquee linear infinite;
   }
 
   .autoplay.hoverable:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
     animation-play-state: paused;
   }
 
@@ -63,6 +78,9 @@
   }
 
   .reverse {
+    -webkit-animation-direction: reverse;
+    -moz-animation-direction: reverse;
+    -o-animation-direction: reverse;
     animation-direction: reverse;
   }
 
