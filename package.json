@@ -21,7 +21,7 @@
     "dist"
   ],
   "description": "Marquee fully responsive and adaptive for Svelte",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "dependencies": {},
   "repository": {
     "type": "git",
