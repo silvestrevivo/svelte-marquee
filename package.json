@@ -14,7 +14,9 @@
     "svelte": "^3.0.0"
   },
   "keywords": [
-    "svelte"
+    "svelte",
+    "marquee",
+    "component"
   ],
   "files": [
     "src",
