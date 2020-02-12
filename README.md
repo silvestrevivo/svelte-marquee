@@ -27,3 +27,7 @@ import Marquee from "svelte-marquee";
 | reverse   |            false             |
 | hoverable |            false             |
 | speed     | "slow", **"medium"**, "fast" |
+
+## License
+
+MIT
