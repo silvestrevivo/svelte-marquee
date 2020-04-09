@@ -75,6 +75,7 @@
   span {
     font-family: inherit;
     font-size: inherit;
+    line-height: normal;
   }
 
   .reverse {
@@ -100,8 +101,10 @@
     class:hoverable
     class:no-autoplay={!autoplay}>
     <span bind:offsetWidth={_contentWidth}>{`${content} `}</span>
-    {#each _arr as item}
-      <span>{`${content} `}</span>
-    {/each}
+    {#if _arr}
+      {#each _arr as item}
+        <span>{`${content} `}</span>
+      {/each}
+    {/if}
   </div>
 </div>
