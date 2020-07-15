@@ -1,9 +1,17 @@
 <script>
+  import { onMount } from "svelte";
   export let content = "svelte-marquee",
     reverse = false,
-    autoplay = true,
+    autoplay,
     hoverable = false,
     speed = "medium";
+
+  onMount(() => {
+    // this fix a bug on safari and firefox
+    if (autoplay === undefined) {
+      autoplay = true;
+    }
+  });
 
   let _marqueecontainerWidth, _contentWidth;
 
